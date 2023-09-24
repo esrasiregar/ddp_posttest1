@@ -1,13 +1,13 @@
 # =================================================================================== #
 def login_sukses():
-  print('=============================================================')
+  print('=============================================================') #Menu yang tersedia setelah melakukan Login
   print(f'Halo {nama}, Selamat Datang Di Kalkulator Segitiga Pythagoras')
   print('[1] Mencari Sisi Alas')
   print('[2] Mencari Sisi Tegak')
   print('[3] Mencari Sisi Miring')
   print('=============================================================')
 
-
+  #While untuk Looping apabila input yang dimasukkan User tidak sesuai, akan diminta kembali memasukkan input yang benar
   while True:
     operasi = input('Silahkan Pilih Operasi yang anda inginkan : ')
 
@@ -46,15 +46,15 @@ def login_sukses():
 # =================================================================================== #
 
 # =================================================================================== #
-print('=======================Login Mahasiswa=======================')
+print('=======================Login Mahasiswa=======================') #Login Untuk Masuk ke Kalkulator
 nama = input('Masukkan Nama : ')
 nim = int(input('Masukkan NIM : '))
 
-while True:
-  password = int(input('Masukkan Password :'))
-  if password == nim:
+while True: #untuk Looping apabila Paswword salah, akan diminta memasukkan ulang Password
+  password = int(input('Masukkan Password :')) 
+  if password == nim: #Password yang dimasukkan sama dengan NIM
     login_sukses()
-    break
+    break #bagian dari while, untuk keluar dari Looping apabila password benar, dan masuk ke Kalkulator
   else:
     print('===========Password anda salah, silahkan coba lagi===========')
 # =================================================================================== #
